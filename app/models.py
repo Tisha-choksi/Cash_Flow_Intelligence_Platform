@@ -3,7 +3,7 @@ from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
 from datetime import datetime, date
 import uuid
-from database import Base
+from app.database import Base
 
 
 # ============================================================================

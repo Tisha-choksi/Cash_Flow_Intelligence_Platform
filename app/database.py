@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 from sqlalchemy.pool import QueuePool
 from typing import Generator
-from config import get_settings
+from app.config import get_settings
 
 settings = get_settings()
 

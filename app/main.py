@@ -15,7 +15,7 @@ import logging
 
 from config import get_settings
 from database import SessionLocal, init_db, engine, Base, get_db
-from models import Company
+from app.models import Company
 from schemas import (
     HealthCheckResponse,
     CompanyCreate,
