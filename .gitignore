@@ -1,0 +1,108 @@
+# =========================
+
+# Python
+
+# =========================
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual Environment
+
+venv/
+env/
+ENV/
+
+# =========================
+
+# Environment Variables
+
+# =========================
+
+.env
+.env.*
+*.env
+
+# =========================
+
+# Database
+
+# =========================
+
+*.db
+*.sqlite3
+
+# =========================
+
+# Logs
+
+# =========================
+
+*.log
+
+# =========================
+
+# IDE / Editor
+
+# =========================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+
+# OS Files
+
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+
+# Uvicorn / FastAPI
+
+# =========================
+
+*.pid
+*.sock
+
+# =========================
+
+# Testing / Coverage
+
+# =========================
+
+.coverage
+htmlcov/
+.pytest_cache/
+
+# =========================
+
+# Node (if frontend added later)
+
+# =========================
+
+node_modules/
+.next/
+out/
+build/
+
+# =========================
+
+# Misc
+
+# =========================
+
+*.bak
+*.tmp
