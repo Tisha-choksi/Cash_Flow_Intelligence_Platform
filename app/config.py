@@ -1,5 +1,6 @@
 import os
 from pydantic_settings import BaseSettings
+from pydantic import ConfigDict
 from functools import lru_cache
 
 
@@ -7,7 +8,7 @@ class Settings(BaseSettings):
     """Application settings loaded from environment variables"""
     
     # Database
-    DATABASE_URL: str = "postgresql://postgres:postgres@localhost:5432/cashflow_db"
+    DATABASE_URL: str = "sqlite:///./cashflow.db"
     
     # API
     API_TITLE: str = "Cash Flow Intelligence Platform"
@@ -38,9 +39,10 @@ class Settings(BaseSettings):
     MIN_CASH_IMPACT_FOR_RECOMMENDATION: float = 1000.0
     MIN_FEASIBILITY_SCORE: float = 0.5
     
-    class Config:
-        env_file = ".env"
-        case_sensitive = True
+    model_config = ConfigDict(
+        env_file=".env",
+        case_sensitive=True
+    )
 
 
 @lru_cache()
